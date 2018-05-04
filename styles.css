@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+
+
+/* Style the header */
+.header {
+    padding: 80px;
+    text-align: center;
+    background-image: url(https://cdn.pixabay.com/photo/2016/02/19/11/19/computer-1209641_960_720.jpg);;
+    color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+    font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {   
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width:100%;
+    }
+}
+
+.me{
+  background-image: url(https://lh3.googleusercontent.com/TWp4GqnIPElFSHdFM5pMqKiqoEJk5zE2XVMU6Mzbzkk0I71T-3fWtriuflUqAg-ohRvVtwj0aTXCcOnF2ztkhqPNrIXf2_acItH_wAYLbB3oRYB0Z5VQr3zsRPR6ZnNmiKHERw-Fbsm3VzEWZ9t06rtJcJwD3LNN80hgKcDAZBnFBL5_YJq9dUwIA792e1wVRKnI_1wLNq2le2NzeYwa-DpulHoy5ft_ZPKMJeULiAhGaE76mcq5b2FVZuuHHi4L1LkTDwP5QSr67cNYfwUA7Lds1o2lUju6azefpR45Lx0GWhHnVBvsIf4gOeLGox7vBYrzerhZ2-HQZjzl16NdFeN352pVQdkKGeswpyXQ-b5g4wvP0zuudzADdGmcPzxYfZ__apQNlDwTFnz6wPV-ALeYLkBc7KvSEcMZ9CJjSKQw7m1Wk4wzmuRwJB6wO6SISOFQFzWQHVtluzoLw_gPuii5OLtOWgYhttSWgIIl14_tz570ckImncphq1RsY1qzGPjKr4-ftZdoVoG9yav0r7nk9cWqG_l78IssApWDFJoeag-mPbjm94b9xYWZKV8WzVuUG6ufbFBM39n6SrSOONXb3oHkE6KZ6Rfo0ts=w690-h984-no);
+  background-size: contain;
+  background-repeat: no-repeat;
+  
+   }
+
+
+.skate{
+  background-image: url(https://lh3.googleusercontent.com/IN1LaZLQlsjC727uttf6aOL4htTgqiCn7AENNzbcTKS1E2YMjv6JOTT9zv_KtXEWfmW4vQyeDbzsnSporZPl74U7xim_rsZVduBt_WHlyPGHcU3s7aC-1yeNeyurZevqrJDeesdBcBfshEimG0Li0mqaBXphyW19Dd4aAEuJEHcfa-6-OeyEFSux7AmV7Ki2Ck1Xvre6lC8cVldYS1BCUM41sKliU070XcVaXGWO01JF4MVHI2_k3C7ZMvWEaX3kU2eMNITo9e0mZ3atg4gAzR1utPRnNgVbIjAOUUmMm6Gcx8EZTbqu6FlM5CB21K-PQlgNsAKkgIK7oYgJ2Sqv_YzLROUm8KbFvEZC7bJojydiGGyzReTm-vmwjHzB536maAkGmSGFmBniJWme2SIyBRTBQCRyOBvqAFZMLFm9PsaZw0AoFaA0Y3cVhE_tD_LBVdx5V4gLU_ANCkkoDjfXlFOHQ0lr8ML7dFoRtMIllXdwNrgscEPhDwLF9PhjRmBtVgpzT-2iwaqYXUr7P4om7PCttHM-woQA25Bye8UFSDHqCV3ZGJwSybvSUj69MzPmmlUVm_PNHCTqpmbf6Qp0tnFU7oZ_LHtfAN6iy8M=w871-h653-no);
+background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+
+
+.paper{
+  background-image: url(https://lh3.googleusercontent.com/KFJKrqWKZ7vZUpcJ9__vC06s8L12iBLwVkXd_25qyyksUkealDxu5QD8eEe-d_WshvaFtGsVX99WOmS5DjXHUhZqHoNIWOrXyUpFWUZYyt153IS7tvdzBAYmuqvXZza8WZgxFyfMjrq6at7QTciy4ivxqa0uNDgEo-Fko32B2Ri6Rw4MxrTbVqaJofuNodXlxLO1dmg9nDmoWblwkSAsr060nOMvCPNbPqxqfLSRH31XQG_7EPVAJAPuZEwpYzmGz-XdS2KuS7gXHWHYUfL9_lgUmpTYrjednf8A7A-0CY3VsfJZmLD1UEvHhv5Dc-s1C9hnCcDYObERKmNdY2AFFboaRBrYzu9kVsXS6zjJjPVoIo0-Jnkn4odpduNaVp_n0P2c7mW5u78hevrd9GCWw3lQosgr3erikry24uMBouXBZw1IYrbHhORA6KWzMmBqRxFbiBe-1puY2iLEjODz4zDiozxKRFss47OT7afb-d5vQ4xba7oZW4XQqz2aFWMdlL6Yrgah8H2gg6uzrPL8CywgGRtRRCILmRCFoZzqqHSn_CbZfeKbW0SYgBxXCWKaMtlS5P5nmMrqbDt0J0hQas2aYP5HDOstv45NwkI=w575-h412-no);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.fakeimg1{
+  background-image: url(https://lh3.googleusercontent.com/Xo1SLzAZqw_ntqqw3PFIPrGHzD10RyJHWvYeOUqWrfeqhYo96hGn4Zv7ZudaJJblAZ2O4NGv18Kl5hQojDzA6iINqS7pY5m8tYViS2-p4mjnzC3oivsJ3OnQnN93cXl_4O27rjHWBf1vWBmppeDbrb2Z687VberC5gmKhKmNAcH66l-hvGxNO37IxzG1oDhVzo7XIIN9e7Xsu0UG2Aecw2T_K-XR-U30_WpIclZQjUSF7aGywTPuJWm53J-QRvV0KutX-eqfmp2Sxrqlbm3hqCWSBSAcQYFJE1Jpf5XAGOIxSVyjpy2YYFkFPQ3s6YD2L2feV3EYAac5D8K9MkrzZza4pL-okmALZYySU24iUYCabGasd3Bh69b22m-_DnFiUrPYv4OxfbPh3jNfSDfUBNjePDBnkcjNmO-B6-1yRpnx9yDkVNiJEQqJr7giFH_KbKvrhkbxeS4-TWJpSvxDsCba_pKMFiRGRtrs_5qZ0ZPx6iBhEi-7_9FcfYQhwloI_Xc_ECmhzGPCtpRYUtoEBGuI4z14mic52cZbZMTYaktUdYtRvuEJ27DNyimsffW_GMxwJn6XvA9f4w6EDA-GucFusbWjMoUK1xIfLcM=w1161-h653-no);
+  background-size: contain;
+  background-repeat: no-repeat;
+   
+}
+
+.fakeimg2{
+  background-image: url(https://scontent.fakl3-1.fna.fbcdn.net/v/t1.0-9/15871935_721850254651040_5968397883717386170_n.jpg?_nc_cat=0&_nc_eui2=v1%3AAeGuOVkNmxmef-L0yqfMiOHk4iUHntSlP10j5CpjiA6sTky-WOhMOlm6u1Jjl_2TwMWYP6kgKdpnX0Dp2TdfQUspVc9OXGCESuAfDTzQSrBe1A&oh=fad563a95b7f064a96bd7bbc93bf87fb&oe=5B9C1C12);
+  background-size: contain;
+  background-repeat: no-repeat;
+   
+}
+
+.fakeimg{
+  background-image: url(https://lh3.googleusercontent.com/p3vURGATsm99iiMFZ2EGDkPuZ0uPibuhB-O0saFzct_zsjeiuPF8M15wcB694-JfzVImAAAZFh2QxL0teCZB1oWCvqrzVztFXOdsSVN0zvVAPWiqFcrPHOg4JYnQoQLu0A9hXgNQf58u1zCUzGNA6WLjCsXlBZrVzqOyXbuX2lbGk1X5xk9XFpnnjIA4d56BFrZpOCWkzFhnPUMfdPv82zagCIstL9qnuARsSP3B5nMXEs11v4B_iU0MnXz64Y2Kp3HIIRw2_LXJuVX8uSVqCKon8hgptNH55hYsWVWEB5p4_bd3rloky12UncDehSnwiNRSyktooesgprMACiNfkNvq_NoEVk9B5RQvPraDWlmGQBCDRyMK0Y8Mdhk7ILK0THCd8Wb8DQzuGtGMa_bTwvnPyaS80rfy0c4dM5hCvZ40YNVqFSwvSy4MmeK4sCnxpf0PABKsww1YzeLFwuBFD7GBTaFhPt2Iaew9l_elqLXnhTBxbKh4MUWW6YItIdZiTg1jKn7DcH1_qSfHRD3I2HpoJBcoYCfTtaE5V099xS5cm5JCJLlk3iec-9ThDVoYWrln4BxpOvZjKRTCAGzP8rpoCV5S3Cs0Xgwj7qI=w1161-h653-no);
+  background-size: contain;
+  background-repeat: no-repeat;
+   over-flow:hidden;
+}
